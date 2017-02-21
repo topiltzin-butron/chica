@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC  "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"  "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+	<definition name="base-template" template="/WEB-INF/views/tiles/layout/layout.jsp">
+		<put-attribute name="title" value="Base title" />
+		<put-attribute name="header" value="/WEB-INF/views/tiles/layout/header.jsp" />
+		<put-attribute name="logo" value="/WEB-INF/views/tiles/layout/logo.jsp" />
+		<put-attribute name="menu" value="/WEB-INF/views/tiles/layout/menu.jsp" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/layout/empty.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/views/tiles/layout/footer.jsp" />
+	</definition>
+	
+	<definition name="hello" extends="base-template">
+		<put-attribute name="title" value="Hola tiles" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/hello.jsp" />
+	</definition>
+	
+	<definition name="chica" extends="base-template">
+		<put-attribute name="title" value="Hola chica" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/chica.jsp" />
+	</definition>
+	
+	<!-- Exceptions -->
+	<definition name="chica-error" extends="base-template">
+		<put-attribute name="title" value="Chica error" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/error/chica-error.jsp" />
+	</definition>
+	
+	<definition name="error" extends="base-template">
+		<put-attribute name="title" value="Global error" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/error/error.jsp" />
+	</definition>
+	
+	<definition name="exception" extends="base-template">
+		<put-attribute name="title" value="Global exception" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/error/exception.jsp" />
+	</definition>
+	
+	<definition name="sql-error" extends="base-template">
+		<put-attribute name="title" value="SQL error" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/error/sql-error.jsp" />
+	</definition>
+	
+	<definition name="404" extends="base-template">
+		<put-attribute name="title" value="Not found" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/error/404.jsp" />
+	</definition>
+	
+	<!-- Security -->
+	<definition name="login" extends="base-template">
+		<put-attribute name="title" value="Vaca" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/login/login.jsp" />
+	</definition>
+	
+	<definition name="403" extends="base-template">
+		<put-attribute name="title" value="Forbiden" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/error/403.jsp" />
+	</definition>
+	
+	<definition name="vaca" extends="base-template">
+		<put-attribute name="title" value="Vaca" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/vaca/vaca.jsp" />
+	</definition>
+	
+	<definition name="admin" extends="base-template">
+		<put-attribute name="title" value="Admin" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/vaca/admin.jsp" />
+	</definition>
+	
+	<definition name="dba" extends="base-template">
+		<put-attribute name="title" value="DBA" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/vaca/dba.jsp" />
+	</definition>
+	
+	<!-- face generator -->
+	<definition name="face.show" extends="base-template">
+		<put-attribute name="title" value="Face show" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/face/show.jsp" />
+	</definition>
+	
+	<!-- greeting -->
+	<definition name="greeting" extends="base-template">
+		<put-attribute name="title" value="Greeting from Cassandra" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/greeting/greetings.jsp" />
+	</definition>
+	
+	<definition name="greeting.add" extends="base-template">
+		<put-attribute name="title" value="Add greeting to Cassandra" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/greeting/add.jsp" />
+	</definition>
+	
+	<!-- messages -->
+	<definition name="messages" extends="base-template">
+		<put-attribute name="title" value="Message sender to RabbitMQ" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/messages/produce.jsp" />
+	</definition>
+	
+	<definition name="messages.workqueue" extends="base-template">
+		<put-attribute name="title" value="Message sender to RabbitMQ - Work Queue" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/messages/produce.jsp" />
+	</definition>
+	
+	<definition name="messages.publish.subscribe" extends="base-template">
+		<put-attribute name="title" value="Message sender to RabbitMQ - Publish/Subscribe" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/messages/produce.jsp" />
+	</definition>
+	
+	<definition name="messages.routing" extends="base-template">
+		<put-attribute name="title" value="Message sender to RabbitMQ - Routing" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/messages/produce.jsp" />
+	</definition>
+
+	<definition name="messages.topic" extends="base-template">
+		<put-attribute name="title" value="Message sender to RabbitMQ - Topic" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/messages/produce.jsp" />
+	</definition>
+	
+	<definition name="messages.rpc" extends="base-template">
+		<put-attribute name="title" value="Message sender to RabbitMQ - RPC" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/messages/produce.jsp" />
+	</definition>
+	
+	<!-- Social Media -->
+	<definition name="social.facebook.show" extends="base-template">
+		<put-attribute name="title" value="Social Media - Facebook" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/social/facebook/show.jsp" />
+	</definition>
+	
+	<definition name="connect/facebookConnect" extends="base-template">
+		<put-attribute name="title" value="Social Media - Facebook Connect" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/social/facebook/connect/facebookConnect.jsp" />
+	</definition>
+	
+	<definition name="connect/facebookConnected" extends="base-template">
+		<put-attribute name="title" value="Social Media - Facebook Connected" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/social/facebook/connect/facebookConnected.jsp" />
+	</definition>
+	
+	<definition name="social.google.show" extends="base-template">
+		<put-attribute name="title" value="Social Media - Google" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/social/show.jsp" />
+	</definition>
+	
+	<definition name="social.twitter.show" extends="base-template">
+		<put-attribute name="title" value="Social Media - Twitter" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/social/show.jsp" />
+	</definition>
+	
+	<!-- app -->
+	<definition name="requestMapping.show" extends="base-template">
+		<put-attribute name="title" value="App - Request Mapping" />
+		<put-attribute name="content" value="/WEB-INF/views/tiles/content/app/requestMapping.jsp" />
+	</definition>
+	
+</tiles-definitions>  
+ 

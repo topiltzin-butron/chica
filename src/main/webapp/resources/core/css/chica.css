@@ -1,0 +1,64 @@
+@CHARSET "UTF-8";
+
+body {
+	background-color: #F9F9F9;
+	font-family: "Proxima Nova Regular","Segoe UI",Roboto,"Droid Sans","Helvetica Neue",Arial,sans-serif;
+    font-style: normal;
+}
+
+#page {
+	width: 90%;
+	margin: 10px auto;
+	border: 1px solid gray;
+}
+
+#header {
+	color: gray;
+	min-height: 210px;
+	background-color: white;
+	border: 1px solid #FFFFF9;
+}
+
+#logo {
+	float: left;
+}
+
+#slogan {
+
+}
+
+#menu {
+	color: #AFE4E8;
+}
+
+/* unvisited link */
+a:link { color: #AFE4E8; }
+/* visited link */
+a:visited { color: #AFE4E8; }
+/* mouse over link */
+a:hover { color: hotpink; }
+/* selected link */
+a:active { color: #AFE4E8; }
+
+h1 {
+	color: #9c7a97;
+}
+
+#content {
+	color: gray; 
+	min-height: 400px;
+	padding: 5px 2px;
+}
+
+#footer {
+	color: white;
+	height: 50px;
+	background-color: #303633;
+	font-size: x-small;
+	text-align: center;
+	vertical-align: middle;
+}
+
+
+#888da7
+#9c7a97
